@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/c1.css">
+</head>
+<body>
+    <header id="header"> </header>
+    <nav id="menu"> 
+        <a href="#top">Trang chủ</a>
+        <a href="#listdiemden"> Điểm đến</a>
+        <a href="#listnhanvien"> Nhân viên</a>
+        <a href="#listduthuyen"> Du thuyền</a>
+    </nav>
+    <main> 
+        <section id="listdiemden">
+            <h2>Danh sách điểm đến </h2>
+            <div id="data"></div>
+        </section>
+        <section id="listnhanvien">
+            <h2> Danh sách nhân viên hỗ trợ </h2>
+            <div id="data"></div>
+        </section>
+        <section id="listduthuyen">
+            <h2> Danh sách du thuyền</h2>
+            <div id="data"></div>
+        </section>
+    </main>
+    <footer> Họ tên sinh viên: Văn Tiến Đạt PS32163</footer>
+</body>
+</html>
+<script type="module">
+   import { showlistdiemden, showlistnhanvien, showlistduthuyen } from './js/app.js';
+   document.querySelector("#listdiemden #data").innerHTML = showlistdiemden();
+   document.querySelector("#listnhanvien #data").innerHTML = showlistnhanvien();
+   document.querySelector("#listduthuyen #data").innerHTML = showlistduthuyen();
+
+</script>
